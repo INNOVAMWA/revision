@@ -10,7 +10,6 @@
 * {
     margin: 0;
     padding: 0;
-    list-style: none;
     text-decoration: none;
 }
 
@@ -25,8 +24,8 @@
     --footer-color: #1A1A1A;
 
     /* USED FONTS */
-    --prim-font: DM+Sans sans-serif;
-    --second-font: Humane sans-serif;
+    --prim-font: DM+Sans, sans-serif;
+    --second-font: Humane, sans-serif;
 }
 
 i {
@@ -37,15 +36,30 @@ i {
     display: flex;
 }
 
+.neocolor {
+    color: var(--neon-green);
+}
+
+.dm-font {
+    font-family: var(--prim-font);
+}
+
+
+.humane-font {
+    font-family: var(--second-font);
+}
+
 body {
     color: var(--white);
     background-color: var(--background1-color);
 }
 
+/* STYLE DESIGN OF THE CV HEAD */
 nav {
     margin-top: 50px;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
+    gap: 5em;
 }
 
 /* .profile-img-box {
@@ -74,40 +88,35 @@ nav {
 
 .profile-img-box {
     align-items: center;
-    color: var(--neon-green);
 }
 
+/* SLIDING STYLE DESIGN */
 .scroll {
-    margin: none;
-    padding: none;
-    gap: 10px;
+
     -webkit-text-fill-color: transparent;
-    color: var(--neon-green);
     -webkit-text-stroke-width: 1px;
-    letter-spacing: 5px;
-    line-height: 5em;
+    line-height: 200px;
     font-size: 50px;
+    letter-spacing: 4px;
     position: absolute;
-    font-family: Humane, sans-serif;
-    size: 100em;
 }
 
 .scroll div {
     gap: 30px;
 }
 
-/* .scroll p {
-   
-} */
+.scroll p {
+    size
+}
 
 .left-to-right {
-    animation: left-to-right 50s infinite linear;
+    animation: lefttoright 50s infinite linear;
     position: relative;
     z-index: 2;
 }
 
 
-@keyframes left-to-right {
+@keyframes lefttoright {
     from {
         transform: translateX(-100%);
     }
@@ -135,52 +144,64 @@ nav {
     }
 }
 
-
+/* PROFILE TEXTES DESIGN */
 .profile-name {
-    color: var(--neon-green);
     text-align: center;
+    width: 17em;
+    position: sticky;
+    top: 0px;
 }
 
+
+.profile-social {
+    margin-top: 20px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+/* .profile-name div a {
+
+} */
+
 .profile-name span {
-    font-family: DM+Sans, sans-serif;
     text-transform: capitalize;
-    font-size: 2em;
+    font-size: 25px;
 }
 
 .profile-name h1 {
-    font-family: humane, sans-serif;
+    font-family: var(--second-font);
     text-transform: uppercase;
     font-size: 10em;
 }
 
 .profile-name p {
-    font-family: DM+Sans, sans-serif;
+    font-family: var(--prim-font);
     text-transform: capitalize;
     font-size: 1em;
+    margin-top: -20px;
 }
 
+/* ABOUT BOX */
 .describe-me {
-    height: 200px;
+    height: 300px;
     width: 900px;
     margin: auto;
     border-radius: 5px;
-    border: 1px solid #c8ff00;
+    border: 1px solid var(--neon-green);
 }
 
 .describe-me-shadow {
-    height: 200px;
+    height: 300px;
     width: 900px;
     line-height: 10px;
     margin-left: 90px;
-    background-image: linear-gradient(#D5FF3F, transparent);
+    background-image: linear-gradient(var(--neon-green), transparent);
     position: absolute;
     opacity: 10%;
 }
 
 .describe-me-title {
     text-align: center;
-    color: var(--neon-green);
-    font-family: Humane, sans-serif;
     font-size: 3em;
 }
 
@@ -188,12 +209,85 @@ nav {
     margin: 10px 50px;
     border-radius: 3px;
     text-align: justify;
+    font-family: var(--prim-font);
 }
 
-.describe-me a {
+.describe-me-butt {
     background-color: var(--neon-green);
     border-radius: 3px;
-    width: 80px;
-    margin-left: 800px;
+    width: 100px;
+    height: 25px;
+    margin-left: 750px;
+    align-items: center;
+    justify-content: center;
+}
 
+/* MY ACADEMIC MILSTONE STYLES */
+
+.formation-text {
+    height: 350px;
+    background-color: var(--background2-color);
+    margin-top: -70px;
+    text-align: justify;
+    padding: 90px 150px;
+}
+
+.formation-title {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.formation-listing {
+    list-style: inside;
+    margin: 0 10px;
+    line-height: 25px;
+}
+
+.formation-title ul {
+    font-size: 15px;
+}
+
+.formation-title ul li p {
+    font-size: 3px;
+    color: var(--grey);
+}
+
+/* MY WORKING EXPERIENCES */
+
+.experience-text {
+    height: 250px;
+    background-color: var(--background1-color);
+    margin-top: -70px;
+    text-align: justify;
+    padding: 90px 150px;
+}
+
+
+
+/* THE RECENT PROJECTS I WORKED ON  */
+
+.project{
+    margin: 100px 100px;
+}
+
+.Projets-net {
+    background-color: var(--background1-color);
+    height: 250px;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 50px 0px;
+    width: 628px;
+}
+
+h4 {
+
+}
+
+
+.project-box {
+    width: 200px;
+    height: 100px;
+    border-radius: 5px;
+    background-color: rgb(168, 185, 95);
+    text-align: center;
 }
