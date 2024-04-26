@@ -159,10 +159,6 @@ nav {
     letter-spacing: 10px;
 }
 
-/* .profile-name div a {
-
-} */
-
 .profile-name span {
     text-transform: capitalize;
     font-size: 25px;
@@ -185,7 +181,7 @@ nav {
 .describe-me {
     height: 300px;
     width: 900px;
-    margin: auto;
+    margin-left: 90px;
     border-radius: 5px;
     border: 1px solid var(--neon-green);
 }
