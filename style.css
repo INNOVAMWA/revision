@@ -184,6 +184,8 @@ nav {
     margin-left: 90px;
     border-radius: 5px;
     border: 1px solid var(--neon-green);
+    position: relative;
+    z-index: -1;
 }
 
 .describe-me-shadow {
