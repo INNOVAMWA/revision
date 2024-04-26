@@ -14,6 +14,7 @@
     text-decoration: none;
 }
 
+
 :root {
     /* USED COLORS  */
     --neon-green: #D5FF3F;
@@ -38,12 +39,13 @@ i {
 
 body {
     color: var(--white);
-     background-color: var(--background1-color);
+    background-color: var(--background1-color);
 }
 
 nav {
     margin-top: 50px;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 /* .profile-img-box {
@@ -58,6 +60,7 @@ nav {
     height: 400px;
     width: 300px;
     object-fit: cover;
+    position: relative;
 }
 
 
@@ -66,7 +69,7 @@ nav {
     width: 300px;
     background-image: linear-gradient(to top, rgb(0, 0, 0), transparent);
     position: absolute;
-    top: 50px;
+
 }
 
 .profile-img-box {
@@ -75,13 +78,22 @@ nav {
 }
 
 .scroll {
- gap: 10px;
+    margin: none;
+    padding: none;
+    gap: 10px;
+    -webkit-text-fill-color: transparent;
+    color: var(--neon-green);
+    -webkit-text-stroke-width: 1px;
+    letter-spacing: 5px;
+    line-height: 5em;
+    font-size: 50px;
+    position: absolute;
+    font-family: Humane, sans-serif;
+    size: 100em;
 }
 
 .scroll div {
-    gap: 2em;
-    font-family: Bebas+Neue, sans-serif;
-    font-size: 30px;
+    gap: 30px;
 }
 
 /* .scroll p {
@@ -89,7 +101,7 @@ nav {
 } */
 
 .left-to-right {
-    animation: left-to-right 10s infinite linear;
+    animation: left-to-right 50s infinite linear;
     position: relative;
     z-index: 2;
 }
@@ -97,16 +109,19 @@ nav {
 
 @keyframes left-to-right {
     from {
-        transform: translateX(-50%);
+        transform: translateX(-100%);
     }
+
     to {
         transform: translateX(0%);
     }
 }
 
+
+
 .right-to-left {
-    animation: right-to-left 10s infinite linear;
-     position: relative;
+    animation: right-to-left 50s infinite linear;
+    position: relative;
     z-index: -2;
 }
 
@@ -114,8 +129,9 @@ nav {
     from {
         transform: translateX(0%);
     }
+
     to {
-        transform: translateX(-50%);
+        transform: translateX(-100%);
     }
 }
 
@@ -123,8 +139,6 @@ nav {
 .profile-name {
     color: var(--neon-green);
     text-align: center;
-  
-    margin-left: -25em;
 }
 
 .profile-name span {
@@ -143,4 +157,43 @@ nav {
     font-family: DM+Sans, sans-serif;
     text-transform: capitalize;
     font-size: 1em;
+}
+
+.describe-me {
+    height: 200px;
+    width: 900px;
+    margin: auto;
+    border-radius: 5px;
+    border: 1px solid #c8ff00;
+}
+
+.describe-me-shadow {
+    height: 200px;
+    width: 900px;
+    line-height: 10px;
+    margin-left: 90px;
+    background-image: linear-gradient(#D5FF3F, transparent);
+    position: absolute;
+    opacity: 10%;
+}
+
+.describe-me-title {
+    text-align: center;
+    color: var(--neon-green);
+    font-family: Humane, sans-serif;
+    font-size: 3em;
+}
+
+.describe-me p {
+    margin: 10px 50px;
+    border-radius: 3px;
+    text-align: justify;
+}
+
+.describe-me a {
+    background-color: var(--neon-green);
+    border-radius: 3px;
+    width: 80px;
+    margin-left: 800px;
+
 }
