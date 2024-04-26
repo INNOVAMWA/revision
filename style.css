@@ -1,0 +1,146 @@
+/* IMPORT VECTORS */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+/* IMPORT FONTS */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.cdnfonts.com/css/humane');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    /* USED COLORS  */
+    --neon-green: #D5FF3F;
+    --grey: #8B949E;
+    --white: #FFFFFF;
+    --background1-color: #1E1E1E;
+    --background2-color: #252525;
+    --footer-color: #1A1A1A;
+
+    /* USED FONTS */
+    --prim-font: DM+Sans sans-serif;
+    --second-font: Humane sans-serif;
+}
+
+i {
+    color: var(--neon-green);
+}
+
+.di-flex {
+    display: flex;
+}
+
+body {
+    color: var(--white);
+     background-color: var(--background1-color);
+}
+
+nav {
+    margin-top: 50px;
+    justify-content: center;
+}
+
+/* .profile-img-box {
+
+} */
+
+/* .profile-img {
+    position: relative;
+} */
+
+.profile-img img {
+    height: 400px;
+    width: 300px;
+    object-fit: cover;
+}
+
+
+.profile-img-shadow {
+    height: 400px;
+    width: 300px;
+    background-image: linear-gradient(to top, rgb(0, 0, 0), transparent);
+    position: absolute;
+    top: 50px;
+}
+
+.profile-img-box {
+    align-items: center;
+    color: var(--neon-green);
+}
+
+.scroll {
+ gap: 10px;
+}
+
+.scroll div {
+    gap: 2em;
+    font-family: Bebas+Neue, sans-serif;
+    font-size: 30px;
+}
+
+/* .scroll p {
+   
+} */
+
+.left-to-right {
+    animation: left-to-right 10s infinite linear;
+    position: relative;
+    z-index: 2;
+}
+
+
+@keyframes left-to-right {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.right-to-left {
+    animation: right-to-left 10s infinite linear;
+     position: relative;
+    z-index: -2;
+}
+
+@keyframes right-to-left {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+.profile-name {
+    color: var(--neon-green);
+    text-align: center;
+  
+    margin-left: -25em;
+}
+
+.profile-name span {
+    font-family: DM+Sans, sans-serif;
+    text-transform: capitalize;
+    font-size: 2em;
+}
+
+.profile-name h1 {
+    font-family: humane, sans-serif;
+    text-transform: uppercase;
+    font-size: 10em;
+}
+
+.profile-name p {
+    font-family: DM+Sans, sans-serif;
+    text-transform: capitalize;
+    font-size: 1em;
+}
