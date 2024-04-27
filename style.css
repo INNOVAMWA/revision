@@ -91,14 +91,12 @@ nav {
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 1px;
     line-height: 200px;
-    font-size: 50px;
+    font-size: 200px;
     letter-spacing: 4px;
     position: absolute;
-
-}
-
-.scroll div {
-    gap: 30px;
+    width: max-content;
+    margin-top: 42px;
+    text-transform: uppercase;
 }
 
 
@@ -107,7 +105,7 @@ nav {
     animation: lefttoright 10s infinite linear;
     position: relative;
     z-index: -2;
-    opacity: 20%;
+    opacity: 30%;
 }
 
 
@@ -127,7 +125,7 @@ nav {
     animation: right-to-left 10s infinite linear;
     position: relative;
     z-index: 2;
-    opacity: 20%;
+    opacity: 30%;
 }
 
 @keyframes right-to-left {
@@ -178,11 +176,9 @@ nav {
     height: 300px;
     width: 900px;
     margin: auto;
-    border-radius: 5px;
-    border-width: 10px;
-    border-style: solid;
+    border: 1px solid;
+    border-color: var(--neon-green);
     background: linear-gradient(180deg, rgba(215, 255, 72, 0.15) 0%, rgba(0, 0, 0, 0.23853291316526615) 100%) padding-box;
-    /* linear-gradient(180deg, rgba(231, 255, 142, 0.404) 5%, rgba(213, 255, 63, 0.253) 0%) border-box; */
     position: relative;
     z-index: -1;
 }
