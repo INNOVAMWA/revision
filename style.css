@@ -24,8 +24,8 @@
     --footer-color: #1A1A1A;
 
     /* USED FONTS */
-    --prim-font: DM+Sans, sans-serif;
-    --second-font: Humane, sans-serif;
+    --prim-font: "DM Sans", sans-serif;
+    --second-font: "Humane", sans-serif;
 }
 
 i {
@@ -62,13 +62,6 @@ nav {
     gap: 5em;
 }
 
-/* .profile-img-box {
-
-} */
-
-/* .profile-img {
-    position: relative;
-} */
 
 .profile-img img {
     height: 400px;
@@ -90,6 +83,8 @@ nav {
     align-items: center;
 }
 
+
+
 /* SLIDING STYLE DESIGN */
 .scroll {
 
@@ -99,20 +94,20 @@ nav {
     font-size: 50px;
     letter-spacing: 4px;
     position: absolute;
+
 }
 
 .scroll div {
     gap: 30px;
 }
 
-.scroll p {
-    size
-}
+
 
 .left-to-right {
-    animation: lefttoright 50s infinite linear;
+    animation: lefttoright 10s infinite linear;
     position: relative;
-    z-index: 2;
+    z-index: -2;
+    opacity: 20%;
 }
 
 
@@ -129,9 +124,10 @@ nav {
 
 
 .right-to-left {
-    animation: right-to-left 50s infinite linear;
+    animation: right-to-left 10s infinite linear;
     position: relative;
-    z-index: -2;
+    z-index: 2;
+    opacity: 20%;
 }
 
 @keyframes right-to-left {
@@ -181,22 +177,17 @@ nav {
 .describe-me {
     height: 300px;
     width: 900px;
-    margin-left: 90px;
+    margin: auto;
     border-radius: 5px;
-    border: 1px solid var(--neon-green);
+    border-width: 10px;
+    border-style: solid;
+    background: linear-gradient(180deg, rgba(215, 255, 72, 0.15) 0%, rgba(0, 0, 0, 0.23853291316526615) 100%) padding-box;
+    /* linear-gradient(180deg, rgba(231, 255, 142, 0.404) 5%, rgba(213, 255, 63, 0.253) 0%) border-box; */
     position: relative;
     z-index: -1;
 }
 
-.describe-me-shadow {
-    height: 300px;
-    width: 900px;
-    line-height: 10px;
-    margin-left: 90px;
-    background-image: linear-gradient(var(--neon-green), transparent);
-    position: absolute;
-    opacity: 10%;
-}
+
 
 .describe-me-title {
     text-align: center;
@@ -264,28 +255,70 @@ nav {
 
 /* THE RECENT PROJECTS I WORKED ON  */
 
-.project{
-    margin: 100px 100px;
+.project {
+    margin-top: 100px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project h4 {
+    font-size: 55px;
+    font-family: var(--second-font);
+}
+
+.line {
+    border-bottom: 2px solid var(--grey);
+    width: 900px;
+    flex-direction: row;
+    margin: 20px 10px;
 }
 
 .Projets-net {
     background-color: var(--background1-color);
     height: 250px;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
-    padding: 50px 0px;
-    width: 628px;
-}
-
-h4 {
-
+    gap: 20px;
+    width: 1200px;
+    margin: 40px -60px;
 }
 
 
 .project-box {
-    width: 200px;
-    height: 100px;
-    border-radius: 5px;
-    background-color: rgb(168, 185, 95);
+    width: 350px;
+    height: 250px;
+    border-radius: 20px;
+    background-image: linear-gradient(to left top, #5b6050, #748550, #8dad4e, #a7d546, #c1ff35);
     text-align: center;
+}
+
+/* THE FOOTER STYLE OF THE CV */
+.port-fit {
+    height: 400px;
+    background-color: var(--footer-color);
+    margin-top: 350px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.port-fit h2 {
+    font-size: 100px;
+}
+
+.port-fit p {
+    margin: auto;
+    width: 600px;
+    font-size: 20px;
+}
+
+.port-fit-sp {
+    margin: auto;
+    width: 1px;
+    font-size: 20px;
+}
+
+.port-fit-social {
+    margin-top: 20px;
+    font-size: 60px;
+    letter-spacing: 2px;
 }
