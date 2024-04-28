@@ -209,13 +209,20 @@ nav {
 }
 
 /* MY ACADEMIC MILSTONE STYLES */
+.formation {
+    height: 500px;
+    background-color: var(--background2-color);
+    margin-top: -50px;
+}
 
 .formation-text {
-    height: 350px;
-    background-color: var(--background2-color);
-    margin-top: -70px;
-    text-align: justify;
-    padding: 90px 150px;
+    padding: 80px 0px;
+    width: 871px;
+    margin: auto;
+}
+
+.formation-text p {
+    color: var(--grey);
 }
 
 .formation-title {
@@ -227,6 +234,7 @@ nav {
     list-style: inside;
     margin: 0 10px;
     line-height: 25px;
+    text-align: justify;
 }
 
 .formation-title ul {
@@ -241,19 +249,19 @@ nav {
 /* MY WORKING EXPERIENCES */
 
 .experience-text {
-    height: 250px;
-    background-color: var(--background1-color);
-    margin-top: -70px;
-    text-align: justify;
-    padding: 90px 150px;
+    padding: 80px 0px;
+    width: 871px;
+    margin: auto;
 }
 
-
+.experience-text p {
+    color: var(--grey);
+}
 
 /* THE RECENT PROJECTS I WORKED ON  */
 
 .project {
-    margin-top: 100px;
+    margin-top: 150px;
     flex-direction: column;
     align-items: center;
 }
@@ -277,7 +285,7 @@ nav {
     flex-wrap: wrap;
     gap: 20px;
     width: 1200px;
-    margin: 40px -60px;
+    margin: 70px -60px;
 }
 
 
@@ -286,7 +294,40 @@ nav {
     height: 250px;
     border-radius: 20px;
     background-image: linear-gradient(to left top, #5b6050, #748550, #8dad4e, #a7d546, #c1ff35);
-    text-align: center;
+    position: relative;
+}
+
+.projects-img {
+    margin: 10px 10px 6px 10px;
+}
+
+.projects-img img {
+    width: 330px;
+    height: 170px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.projects-num {
+    background-color: var(--background2-color);
+    height: 65px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.projects-num p {
+    font-size: 25px;
+    color: var(--white);
+}
+
+.projects-num span {
+    font-size: 10px;
+    color: var(--neon-green);
 }
 
 /* THE FOOTER STYLE OF THE CV */
