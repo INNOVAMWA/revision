@@ -87,29 +87,27 @@ nav {
 
 /* SLIDING STYLE DESIGN */
 .scroll {
-
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
-    line-height: 200px;
+    -webkit-text-stroke-width: 2px;
     font-size: 200px;
-    letter-spacing: 4px;
-    position: absolute;
-    width: max-content;
-    margin-top: 42px;
+    position: absolute ;
+    margin-top: 45px;
     text-transform: uppercase;
+    width: max-content;  
+    
 }
 
 
 
 .left-to-right {
-    animation: lefttoright 10s infinite linear;
+    animation: left-to-right 20s infinite linear;
     position: relative;
     z-index: -2;
-    opacity: 30%;
+    opacity: 10%;
+    gap: 35px;
 }
 
-
-@keyframes lefttoright {
+@keyframes left-to-right {
     from {
         transform: translateX(-100%);
     }
@@ -122,10 +120,11 @@ nav {
 
 
 .right-to-left {
-    animation: right-to-left 10s infinite linear;
+    animation: right-to-left 20s infinite linear;
     position: relative;
     z-index: 2;
-    opacity: 30%;
+    opacity: 10%;
+    gap: 35px;
 }
 
 @keyframes right-to-left {
@@ -176,9 +175,11 @@ nav {
     height: 300px;
     width: 900px;
     margin: auto;
-    border: 1px solid;
-    border-color: var(--neon-green);
-    background: linear-gradient(180deg, rgba(215, 255, 72, 0.15) 0%, rgba(0, 0, 0, 0.23853291316526615) 100%) padding-box;
+    padding-top: 30px;
+    border: 1px solid transparent;
+    /* border-color: var(--neon-green); */
+    background: linear-gradient(0deg, rgba(37,37,37,1) 0%, rgba(43,46,32,1) 100%) padding-box,
+    linear-gradient(180deg, rgb(215, 255, 72) 0%, rgba(0, 0, 0, 0) 75%) border-box;
     position: relative;
     z-index: -1;
 }
@@ -305,13 +306,10 @@ nav {
     margin: auto;
     width: 600px;
     font-size: 20px;
+    color: var(--grey);
 }
 
-.port-fit-sp {
-    margin: auto;
-    width: 1px;
-    font-size: 20px;
-}
+
 
 .port-fit-social {
     margin-top: 20px;
